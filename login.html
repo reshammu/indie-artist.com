@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Login Page </title>
+        <style>
+        body {
+                background-image: url("final music.jpg.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                }
+            form {
+                margin: 15px;
+                padding: 9%;
+                text-align:center;
+                border-color: black;
+                background-position: center;
+                font-family: white;
+                color:white;
+                font-size:150%;
+            }
+            h1 { 
+                text-align: center;
+                text-overflow: ellipsis;
+                font:large;
+                color:black;
+                
+            }
+            </style>
+    <body>
+        <h1>Login</h1>
+        <form class="form" id="form" >
+            Username<input class="Username"  id="username" type="text" size="20"><br><br>
+            Password<input type="password" class="password" id="password" size="20"><br><br>
+            <input type="submit" onclick=validate() value="submit"><br>
+        </form>
+        <script type="text/javascript">
+            function validate()
+            {
+                let x = document.forms["form"]["username"].value;
+            if (x == "") {
+            alert("Name must be filled out");
+            return false;
+            }
+                let y = document.forms["form"]["password"].value;
+             if (y == "") {
+            alert("password must be filled out");
+            return false;
+            }   
+            }
+        </script>
+    </body>
+</html>
